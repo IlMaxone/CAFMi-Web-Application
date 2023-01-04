@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS FILES -->
+    <link href="login/css/logstyle.css" rel="stylesheet">
+    
+
+
+</head>
+<body>
+    <body id="particles-js"></body>
+    <div class="animated bounceInDown">
+      <div class="container">
+        <span class="error animated tada" id="msg"></span>
+        <form name="login" class="box" onsubmit="return checkStuff()" action="verifica_account" method="post">
+          <h2>Recupera password</h2>
+          <h4>Accedi al tuo account</h4>
+            <input type="text" name="email" placeholder="Email" autocomplete="off">
+            <i class="typcn typcn-eye" id="eye"></i>
+            <input type="text" name="cod_fiscale" placeholder="Codice fiscale" id="cf" autocomplete="off">
+           
+        
+            <input type="submit" value="Reset password" class="btn1">
+          </form>
+          
+      </div> 
+           <div class="footer">
+          
+        </div>
+    </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="../js/logjs.js"></script>
+    </body>
+    </html> 
+    
+  
