@@ -4,7 +4,7 @@
 
 <h1 align="center">Chi Siamo</h1>
 
-<h3>Questo progetto è stato sviluppato da un gruppo di 5 ragazzi facente parte della classe JAMI70 di </h3>[Generation Italy](https://italy.generation.org/)
+Questo progetto è stato sviluppato da un gruppo di 5 ragazzi facente parte della classe JAMI70 di [Generation Italy](https://italy.generation.org/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
