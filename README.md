@@ -6,6 +6,11 @@
 
 Questo progetto è stato sviluppato da un gruppo di 5 ragazzi facente parte della classe JAMI70 di [Generation Italy](https://italy.generation.org/)
 
+Partecipanti al progetto:
+[Rona Mae Dela Cueva](https://www.linkedin.com/in/ronamaedc/) investe di Project Manager 
+![rona-quadrato](https://user-images.githubusercontent.com/95580482/212110893-ff48312c-3670-4d9a-bd1c-d23d82084bc9.jpg)
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
