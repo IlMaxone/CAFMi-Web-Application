@@ -1,10 +1,10 @@
 <h1 align="center">#CAFMi Project</h1>
 
-<h3>Benvenuto nella sezione GitHub del progetto CAFMi, un projectwork realizzato rispondere ad una delle difficoltà che più si incontrano quando si ha a che fare con la burocrazia italiana.</h3>
+<h3>Benvenuto nella sezione GitHub del progetto CAFMi, un projectwork realizzato per rispondere a determinate difficoltà che più si incontrano quando si ha a che fare con la burocrazia italiana.</h3>
 
 <h1 align="center">Chi Siamo</h1>
 
-Questo progetto è stato sviluppato da un gruppo di 5 ragazzi facente parte della classe JAMI70 di [Generation Italy](https://italy.generation.org/)
+<h3>Questo progetto è stato sviluppato da un gruppo di 5 ragazzi facente parte della classe JAMI70 di [Generation Italy](https://italy.generation.org/)</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
