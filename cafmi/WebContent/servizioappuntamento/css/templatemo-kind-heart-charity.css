@@ -10,8 +10,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+    src: url('landing/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+        url('landing/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Light.woff') format('woff');
+    src: url('landing/fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+        url('landing/fonts/Metropolis/Metropolis-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+    src: url('landing/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+        url('landing/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -37,8 +37,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+    src: url('landing/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+        url('landing/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -49,15 +49,14 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #000000;
+  --primary-color:                #5bc1ac;
   --secondary-color:              #5a6f80;
   --section-bg-color:             #f0f8ff;
   --site-footer-bg-color:         #44525d;
-  --primary-color:                #5bc1ac;
-  --custom-btn-bg-color:          #4bbcbc;
-  --custom-btn-bg-hover-color:    #3cd49a;
+  --custom-btn-bg-color:          #597081;
+  --custom-btn-bg-hover-color:    #5bc1ac;
   --dark-color:                   #000000;
-  --p-color:                      #44525d;
+  --p-color:                      #717275;
   --border-color:                 #e9eaeb;
 
   --body-font-family:             'Metropolis', sans-serif;
@@ -114,6 +113,7 @@ h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
   letter-spacing: -2px;
+
 }
 
 h2 {
@@ -299,6 +299,17 @@ strong {
 
 
 /*---------------------------------------
+  AVATAR IMAGE - TESTIMONIAL, AUTHOR               
+-----------------------------------------*/
+.avatar-image {
+  border-radius: var(--border-radius-large);
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
+
+/*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
@@ -312,11 +323,11 @@ strong {
   padding: 15px 25px;
 }
 
-/*.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
   color: var(--custom-btn-bg-color);
   margin-top: 8px;
   padding: 12px 25px;
-} */
+}
 
 .custom-btn:hover {
   background: var(--primary-color);
@@ -329,17 +340,17 @@ strong {
   color: var(--primary-color);
 }
 
-/*.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
   color: var(--white-color);
 }
-*/
+
 
 /*---------------------------------------
   NAVIGATION              
-
+-----------------------------------------*/
 .navbar {
   background: var(--white-color);
   z-index: 9;
@@ -397,7 +408,7 @@ strong {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   border: 0;
-  max-width: 50px;
+ max-width: 280px;  /*max-width: fit-content;  */
   padding: 0;
   margin-top: 20px;
 }
@@ -514,7 +525,6 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
------------------------------------------*/
 
 
 /*---------------------------------------
@@ -545,11 +555,223 @@ strong {
   margin-right: 15px;
 }
 
+
 /*---------------------------------------
-  PRENOTA APPUNTAMENTO             
+  HERO & HERO SLIDE         
+-----------------------------------------
+
+
+.hero-section-full-height {
+  height: 680px;
+  min-height: 680px;
+  position: relative;
+}
+
+.carousel:hover .carousel-control-next-icon, 
+.carousel:hover .carousel-control-prev-icon {
+  opacity: 1;
+}
+
+#hero-slide .carousel-item {
+  height: 680px;
+  min-height: 680px;
+}
+
+#hero-slide .carousel-caption { 
+  top: 1px;
+  bottom: -1px;
+  right: 0;
+  left: 20;
+  text-align: right;
+  min-width: 680px;
+  min-height: 680px;
+  padding: 100px 100px 40px 100px;
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+ min-height: 680px;
+}
+
+#hero-slide .carousel-indicators-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#hero-slide .carousel-indicators {
+  margin-right: 0;
+  margin-left: 22px;
+  justify-content: inherit;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  background-size: 60% 60%;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.carousel-control-next-icon:hover, 
+.carousel-control-prev-icon:hover {
+  background-color: var(--primary-color);
+} */
+
+
+/*---------------------------------------
+  FEATURE BLOCK              
+-----------------------------------------*/
+.featured-block {
+  text-align: center;
+  transition: all 0.5s ease;
+  min-height: 256px;
+  padding: 15px;
+}
+
+.featured-block:hover {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.featured-block:hover .featured-block-image {
+  transform: scale(0.75);
+}
+
+.featured-block-image {
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.featured-block:hover .featured-block-text {
+  margin-top: 0;
+}
+
+.featured-block-text {
+  color: var(--primary-color);
+  font-size: var(--h5-font-size);
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+
+
+/*---------------------------------------
+  ABOUT              
+-----------------------------------------*/
+.about-section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-image {
+  border-radius: var(--border-radius-medium);
+  display: block;
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.custom-text-block {
+  padding: 60px 40px;
+}
+
+
+/*---------------------------------------
+  COUNTER NUMBERS              
+-----------------------------------------*/
+.counter-thumb {
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.counter-number,
+.counter-text {
+  color: var(--secondary-color);
+  display: block;
+}
+
+.counter-number,
+.counter-number-text {
+  color: var(--primary-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+}
+
+
+/*---------------------------------------
+  VOLUNTEER              
+-----------------------------------------*/
+.volunteer-section {
+  background: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.volunteer-section::after {
+  content: "";
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -110px;
+  right: -80px;
+  width: 350px;
+  height: 350px;
+}
+
+.volunteer-form {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 50px;
+}
+
+.volunteer-image {
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.volunteer-section .custom-block-body {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.volunteer-section .custom-block-body p {
+  line-height: 1.7;
+}
+
+
+/*---------------------------------------
+  PRENOTA APPUNTAMENTO  -PAGINE           
 -----------------------------------------*/
 .appointment-section {
-  background-image: url('../images/Appointment-1.jpg');
+  /*background-image: url('servizioappuntamento/images/Appointment-1.jpg');*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.prenota {
+  background-image: url('../../servizioappuntamento/images/Appointment-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1290,7 +1512,7 @@ blockquote::before {
     padding: 35px;
   }
 
-  /*.navbar {
+  .navbar {
     padding-top: 6px;
     padding-bottom: 6px;
   }
@@ -1445,11 +1667,11 @@ blockquote::before {
 
   #hero-slide .carousel-caption {
     clip-path: polygon(100% 100%, 100% 100px, 0 100%);
-    padding-right: 50px;
+    padding-right: 60px;
     min-width: inherit;
     min-height: inherit;
   }
-} */
+}
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -1513,4 +1735,163 @@ blockquote::before {
     padding: 25px;
   }
 }
+
+/* EXTRA X CAROUSEL */
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.hero .carousel {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.hero .info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero .info {
+    padding: 0 50px;
+  }
+}
+
+.hero .info h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero .info h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 100px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero .info h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .hero .info h2 {
+    font-size: 36px;
+  }
+}
+
+.hero .info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.hero .info .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  border: 2px solid var(--color-primary);
+}
+
+.hero .info .btn-get-started:hover {
+  background: var(--color-primary);
+}
+
+.hero .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+  opacity: 0.9;
+}
+
 

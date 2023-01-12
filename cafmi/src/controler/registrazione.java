@@ -23,15 +23,13 @@ public class registrazione extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		RequestDispatcher rd;
-		rd = request.getRequestDispatcher("/login/html/registrazione.html");
+		rd = request.getRequestDispatcher("login/html/registrazione.html");
 		rd.forward(request, response);
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		doGet(request, response);
 	}
 

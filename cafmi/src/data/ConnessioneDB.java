@@ -18,7 +18,9 @@ public class ConnessioneDB {
 	//private static final String USERNAME = "Alex_Kevin";
 	private static final String USERNAME = "root";
 	//private static final String PASSWORD = "Caric@re1998";
-	private static final String PASSWORD = "J4v4DevKing43";
+	//private static final String PASSWORD = "J4v4DevKing43";
+	private static final String PASSWORD = "MaxoneCloudServer!";
+	//private static final String PASSWORD = "Wujie95.";
 
 	public static Connection getCon() {
 		return con;

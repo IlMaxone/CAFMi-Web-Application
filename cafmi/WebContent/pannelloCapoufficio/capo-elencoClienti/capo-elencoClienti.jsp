@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ page import = "data.UserDAO" %>
+	<%@ page import = "model.User" %>
+	<%@ page import = "data.UserDAO" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,11 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CAFMi | Pannello Dirigente</title>
+        <title>CAFMi | Elenco clienti</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- CSS -->
-        <link href="pannelloCapoufficio/capo-index/capo-index-style.css" rel="stylesheet" />  
+        <link href="pannelloCapoufficio/css/admin-stile.css" rel="stylesheet" />  
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="pannelloCapoufficio/capo-index/img/logo.png" />      
     </head>
@@ -35,12 +36,14 @@
                 <p id="nomePannello" class="text-light">Accesso: <%out.print(cognome);%> <%out.print(nome); %></p>
                 </div>
             </div>
-            <!-- Navbar-->
+ 
+
+<!-- NAVBAR SIDE-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="home">Home</a></li>
+                    		<li><a class="dropdown-item" href="home">Home</a></li>
                         <li><a class="dropdown-item" href="logout">Logout</a></li>
                     </ul>
                 </li>
@@ -52,28 +55,40 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-
-                            <div class="sb-sidenav-menu-heading">GESTIONE DEL PERSONALE</div>
-                            <a class="nav-link" href="pannelloCapoufficio/capo-elencoDipendenti/capo-elencoDipendenti.jsp">
-                            <a class="nav-link" href="e_dip">
-                                <div class="sb-nav-link-icon"><i class="fa-sharp fa-solid fa-users"></i></div>
-                                Elenco dipendenti
+                        
+                        	<div class="sb-sidenav-menu-heading">PRINCIPALI</div>
+                            <a class="nav-link" href="home">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                                Home
                             </a>
-
+                            <a class="nav-link" href="dirigente">
+                                <div class="sb-nav-link-icon"><i class="fa-sharp fa-solid fa-house-user"></i></div>
+                                Pannello Dirigente 
+                            </a>
+                            
                             <div class="sb-sidenav-menu-heading">GESTIONE DELLA CLIENTELA</div>
-                            <a class="nav-link" href="pannelloCapoufficio/capo-elencoClienti/capo-elencoClienti.jsp">
                             <a class="nav-link" href="e_cli">
                                 <div class="sb-nav-link-icon"><i class="fa-sharp fa-solid fa-user-group"></i></div>
                                 Elenco clienti
                             </a>
+
+                            <div class="sb-sidenav-menu-heading">GESTIONE DEL PERSONALE</div>
+                            <a class="nav-link" href="e_dip">
+                                <div class="sb-nav-link-icon"><i class="fa-sharp fa-solid fa-users"></i></div>
+                                Elenco dipendenti
+                            </a>
+                             <a class="nav-link" href="messaggi_dipendenti">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file"></i></div>
+                                Richieste dipendenti
+                            </a>
+
                             
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <%int ruolo1 = (int)session.getAttribute("ruolo"); 
                         if(ruolo1 == 1){out.print("Dipendente: ");}
-                        else if(ruolo1 == 2) {out.print("Manager: ");}
-                        else if(ruolo1 == 3) {out.print("Capo Ufficio: ");}
+                        else if(ruolo1 == 2) {out.print("Dirigente: ");}
                         %><br><%out.print(cognome);%> <%out.print(nome);%>
                         <div class="small">Login ID: <% out.print(id); %></div>
                     </div>
@@ -131,6 +146,6 @@
         <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <!-- JS X NAVBAR -->
-        <script src="capo-elencoClienti-js.js"></script>
+        <script src="pannelloCapoufficio/capo-elencoClienti/capo-elencoClienti-js.js"></script>
     </body>
 </html>

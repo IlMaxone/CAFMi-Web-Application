@@ -48,6 +48,10 @@ public class User {
 		this.cod_ruolo = cod_ruolo;
 	}
 	
+	public User(String password) {
+		this.password = password;
+	}
+	
 	public User(int codice_cliente, String nome, String cognome, String numero_telefono, String email, String password,
 			String indirizzo, String citta, int cap_citta, String codice_fiscale, String sesso, int cod_ruolo) {
 		this.codice_cliente = codice_cliente;

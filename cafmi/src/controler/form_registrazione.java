@@ -43,11 +43,13 @@ public class form_registrazione extends HttpServlet {
 		if(user == null){
 			nuovoUser.insertUser(name, surname, tel, mail, pass, adress, country, cap, CF, sex, r);
 			user = nuovoUser.selectAccountByUserPass(mail, pass);
-			rd = request.getRequestDispatcher("/landing/html/home.html");
-			rd.forward(request, response);
-		}else{
+			rd = request.getRequestDispatcher("login/html/Successo.html");
+			
+		}else {
+			rd = request.getRequestDispatcher("login/html/Errore.html");
 			System.out.println("Errore");
 		}
+		rd.forward(request, response);
 	}
 
 }

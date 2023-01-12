@@ -22,7 +22,6 @@ public class recupPassword extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("/login/html/recupera.html");
 		rd.forward(request, response);
@@ -30,7 +29,6 @@ public class recupPassword extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		doGet(request, response);
 	}
 

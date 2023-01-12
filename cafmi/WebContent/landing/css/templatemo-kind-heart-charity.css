@@ -10,8 +10,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('landing/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
-        url('landing/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+    src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+        url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('landing/fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
-        url('landing/fonts/Metropolis/Metropolis-Light.woff') format('woff');
+    src: url('../fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+        url('../fonts/Metropolis/Metropolis-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('landing/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-        url('landing/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+    src: url('../fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+        url('../fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -37,8 +37,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('landing/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-        url('landing/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+    src: url('../fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+        url('../fonts/Metropolis/Metropolis-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -407,10 +407,9 @@ strong {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   border: 0;
-  max-width: 500px;
+  max-width: 300px;
   padding: 0;
   margin-top: 20px;
- 
 }
 
 .dropdown-item {
@@ -654,7 +653,6 @@ strong {
   display: block;
   margin: auto;
   transition: all 0.5s;
-  height: 135px;
 }
 
 .featured-block:hover .featured-block-text {
@@ -663,7 +661,7 @@ strong {
 
 .featured-block-text {
   color: var(--primary-color);
-  font-size: var(--h6-font-size);
+  font-size: var(--h5-font-size);
   margin-top: 20px;
   transition: all 0.5s;
 }
@@ -763,7 +761,7 @@ strong {
   DONATE              
 -----------------------------------------*/
 .donate-section {
-  background-image: url('landing/images/different-people-doing-volunteer-work.jpg');
+  background-image: url('../images/different-people-doing-volunteer-work.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -785,7 +783,7 @@ strong {
   NEWS         
 -----------------------------------------*/
 .news-detail-header-section {
-  background-image: url('landing/images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
+  background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1661,5 +1659,34 @@ blockquote::before {
   .donate-form {
     padding: 25px;
   }
+  
+  
+  /*COOKIE */
+
+.cookie-disclaimer {
+background-color: #000000;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 150px;
+  position: fixed;
+}
+.cookie-disclaimer .container{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cookie-disclaimer .cookie-close{
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+}
+
+/* TEAM */
+.aTeam{
+	text-color: success;
 }
 

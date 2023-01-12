@@ -20,6 +20,7 @@ import model.User;
 public class verifica_account extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	List<User> utentiloggati;
+	RequestDispatcher rd;
 
     public verifica_account() {
         super();
@@ -37,7 +38,6 @@ public class verifica_account extends HttpServlet {
 		String pass = request.getParameter("password");
 		UserDAO nuovoUser = new UserDAO();
 		User user = nuovoUser.selectAccountByUserPass(mail, pass);
-		RequestDispatcher rd;
 		HttpSession session = request.getSession(true);
 		System.out.println(session.getId());
 		if(user!=null) {

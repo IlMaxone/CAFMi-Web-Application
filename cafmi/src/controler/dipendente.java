@@ -19,7 +19,7 @@ public class dipendente extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher rd;
-		rd = request.getRequestDispatcher("/pannelloDipendente/dip-index/dip-index.jsp");
+		rd = request.getRequestDispatcher("pannelloDipendente/dip-index/dip-index.jsp");
 		rd.forward(request, response);
 	}
 
