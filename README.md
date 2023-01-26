@@ -27,23 +27,27 @@ Partecipanti al progetto:<br>
 
 <img src="https://user-images.githubusercontent.com/95580482/212112378-97574801-5e2d-4d25-a443-4b9e319b210f.png" width=20% height=20%><br>
 [Rona mae Dela cueva](https://www.linkedin.com/in/ronamaedc/) come sviluppatrice FrontEnd <br>
-[Linkedin](https://www.linkedin.com/in/ronamaedc/) - [GitHub](https://github.com/ronamdc)
+<a href="https://www.linkedin.com/in/ronamaedc/"><img src="files/img/linkedin.png" alt="logo linkedin" style="width:30px;height:30px;"></a> &nbsp; <a href="https://github.com/ronamdc"><img src="files/img/github.png" alt="logo github" style="width:30px;height:30px;">
 
 <img src="https://user-images.githubusercontent.com/95580482/212112413-f218fa36-f304-4402-a72e-c307b2bf1318.png" width=20% height=20%><br>
 [Jie Wu](https://www.linkedin.com/in/jie-wu1/) come sviluppatrice FrontEnd <br>
-[Linkedin](https://www.linkedin.com/in/jie-wu1/) - [GitHub](https://github.com/getJie2)
+<a href="https://www.linkedin.com/in/jie-wu1/"><img src="files/img/linkedin.png" alt="logo linkedin" style="width:30px;height:30px;"></a> &nbsp; <a href="https://github.com/getJie2"><img src="files/img/github.png" alt="logo github" style="width:30px;height:30px;">
+
 
 <img src="https://user-images.githubusercontent.com/95580482/212112448-ab76d83e-276f-494c-8108-b8d6a45908dd.png" width=20% height=20%><br>
 [Eleonora Manushi](https://www.linkedin.com/in/eleonora-manushi-b99423257/) come sviluppatrice FrontEnd <br>
-[Linkedin](https://www.linkedin.com/in/eleonora-manushi-b99423257/) - [GitHub](https://github.com/Eleoon)
+<a href="https://www.linkedin.com/in/eleonora-manushi-b99423257/"><img src="files/img/linkedin.png" alt="logo linkedin" style="width:30px;height:30px;"></a> &nbsp; <a href="https://github.com/Eleoon"><img src="files/img/github.png" alt="logo github" style="width:30px;height:30px;">
+
  
 <img src="https://user-images.githubusercontent.com/95580482/212112468-cfeaa4c5-ea94-4fce-a1d4-7ecc20eaa757.png" width=20% height=20%><br> 
 [Alex Kevin Tchinche](https://www.linkedin.com/in/alex-kevin-tchinche-tadjuidje/) come sviluppatore BackEnd <br>
-[Linkedin](https://www.linkedin.com/in/alex-kevin-tchinche-tadjuidje/) - [GitHub](https://github.com/Alextorials)
+<a href="https://www.linkedin.com/in/alex-kevin-tchinche-tadjuidje/"><img src="files/img/linkedin.png" alt="logo linkedin" style="width:30px;height:30px;"></a> &nbsp; <a href="https://github.com/Alextorials"><img src="files/img/github.png" alt="logo github" style="width:30px;height:30px;">
+
  
 <img src="https://user-images.githubusercontent.com/95580482/212113170-fc280d3c-1a93-4e5e-870c-3404efb77d85.png" width=20% height=20%><br>
 [Maxim Karlov](https://www.linkedin.com/in/maxim-karlov-34b859162/) come sviluppatore BackEnd <br>
-[Linkedin](https://www.linkedin.com/in/maxim-karlov-34b859162/) - [GitHub](https://github.com/IlMaxone)
+<a href="https://www.linkedin.com/in/maxim-karlov-34b859162/"><img src="files/img/linkedin.png" alt="logo linkedin" style="width:30px;height:30px;"></a> &nbsp; <a href="https://github.com/IlMaxone"><img src="files/img/github.png" alt="logo github" style="width:30px;height:30px;">
+
 
 <hr>
  
