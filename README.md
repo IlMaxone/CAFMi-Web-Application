@@ -1,4 +1,5 @@
 <h1 align="center">Final Project Work - CAFMi</h1>
+<img src="files/img/CAFMi-logoBanner.png" alt="logo e banner Cafmi">
  
 <p>
     Benvenuto nella sezione GitHub del progetto CAFMi! <br>
